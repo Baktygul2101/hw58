@@ -1,4 +1,35 @@
 'use strict'
+
+
+  //task 1
+  let user = {
+    id:1,
+    name: 'Umut',
+    email: 'uma@mail.ru',
+    isAuthorised: false
+};
+console.log(user);
+
+
+//task 2
+let post = {
+    id:1, //обращение к айди  объекта юзера
+    title: 'post 1',
+    userId:1,
+    time: 2020,
+    isLiked: false
+};
+console.log(post);
+
+
+//task 3
+let comment = {
+    userId:3, //обращение к айди  объекта юзера
+    postId:1, //обращение к айди  объекта поста
+    text: 'my first comment'
+};
+console.log(comment);
+
 // task 1
 let a =document.querySelector(".no-scroll");
 let b =document.querySelector(".page-splash");
