@@ -24,8 +24,23 @@ function hideSplashScreen(){
 //task 2
 function createCommentElement(){
     let comment=document.querySelector('[name=text]').value;
-    let elem= document.createElement('div')
+    let elem= document.createElement('p')
     elem.innerHTML=comment;
     document.getElementsByTagName('div')[0].append(elem);
 }
 
+//task 3
+function createPostElement(){
+    const html =('<div>'+'<img class="d-block w-100" src="'+imageUrl+'" alt="Post image">'+'</div>');
+    let element= document.createElement('div')
+    element.innerHTML=post;
+    document.getElementsByTagName('div')[0].append(element);
+}
+
+//task 4
+function addPost(){
+    let post=document.querySelector('[name= post]').value;
+    let el= document.createElement('p')
+    el.innerHTML=post;
+    document.getElementsByTagName('div')[0].append(el);
+}
