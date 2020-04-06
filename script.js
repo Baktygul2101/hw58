@@ -66,9 +66,9 @@ function createCommentElement(comment){
 
 //task 3
 /*function createPostElement(){
-    const html =('<div>'+'<img class="d-block w-100" src="'+imageUrl+'" alt="Post image">'+'</div>');
+    const html =('<div>'+'<img class="d-block w-100" src="'+http://placekitten.com/200/286+'" alt="Post image">'+'</div>');
     let element= document.createElement('div')
-    element.innerHTML=post;
+    element.innerHTML=html;
     document.getElementsByTagName('div')[0].append(element);
 }*/
 

@@ -1,5 +1,10 @@
+body{
+    align-items: center;
+    
+}
 .no-scroll {
     overflow: hidden;
+    
   }
   .page-splash {
     position: absolute;
@@ -11,4 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .photo-post {
+    align-items: center;
+    padding-left: 400px;
   }
