@@ -64,18 +64,44 @@ function createCommentElement(comment){
    
 }
 
-//task 3
-/*function createPostElement(){
-    const html =('<div>'+'<img class="d-block w-100" src="'+http://placekitten.com/200/286+'" alt="Post image">'+'</div>');
-    let element= document.createElement('div')
-    element.innerHTML=html;
-    document.getElementsByTagName('div')[0].append(element);
-}*/
+
 
 //task 4
 function addPost(postElement){
     postElement=document.querySelector('[name= post]').value;
+    postPhoto=document.querySelector('[name= photo]').value;
     let el= document.createElement('p')
+    let ele= document.createElement('img')
     el.innerHTML=postElement;
-    document.getElementsByClassName('post-div')[0].appendChild(el);
+    ele.innerHTML=postPhoto;
+    document.getElementsByClassName('post-div')[0].appendChild(el,ele);
+}
+
+
+// HW59 task1
+function toggleHurt(){
+    document.getElementById('heart').classList.toggle("redColor");
+}
+
+// task2
+const doubleClick = document.querySelector("img");
+doubleClick.ondblclick=function(){ 
+console.log("here double click");
+toggleHurt();
+}
+
+// task3
+function togglePost(){
+    document.getElementById('publ').classList.toggle("mark");
+
+}
+//
+function showForm() {
+    document.getElementById("comm").hidden = false;
+    document.getElementById("link").hidden = true;
+   }
+
+function toggleComment(){
+    document.getElementById('cmn').classList.toggle(showForm());
+
 }

@@ -1,7 +1,4 @@
-body{
-    align-items: center;
-    
-}
+
 .no-scroll {
     overflow: hidden;
     
@@ -17,7 +14,27 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .photo-post {
-    align-items: center;
-    padding-left: 400px;
+  
+
+  .redColor{
+  color: red;
+  background-image: url("heart.png");
+  background-position: center ;
+  }
+
+
+  .mark{
+      color: black;
+      background-image: url("mark.png");
+      background-position: center ;
+  
+
+  }
+  .mark.mark{
+    padding: 0em;
+  }
+  
+  .bt{
+    text-align: center;
+    background-position: center;
   }
